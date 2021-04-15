@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6470" started-at="2021-04-15T21:54:17 IST" finished-at="2021-04-15T21:54:24 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6470" started-at="2021-04-15T21:54:17 IST" finished-at="2021-04-15T21:54:24 IST">
+      <class name="basic.rest.postcall.deleteRequest">
+        <test-method status="PASS" signature="createRepo()[pri:0, instance:basic.rest.postcall.deleteRequest@30a3107a]" name="createRepo" duration-ms="5696" started-at="2021-04-15T21:54:17 IST" finished-at="2021-04-15T21:54:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRepo -->
+        <test-method status="PASS" signature="deleteRepo()[pri:0, instance:basic.rest.postcall.deleteRequest@30a3107a]" name="deleteRepo" duration-ms="719" started-at="2021-04-15T21:54:23 IST" finished-at="2021-04-15T21:54:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRepo -->
+      </class> <!-- basic.rest.postcall.deleteRequest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
+    <fullyQualifiedTypeName name="org.codehaus.groovy.transform.EqualsAndHashCodeASTTransformation"/>
+    <fullyQualifiedTypeName name="scala.Equals"/>
+    <fullyQualifiedTypeName name="org.hamcrest.Matcher"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.Validate"/>
+    <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
+    <fullyQualifiedTypeName name="org.hamcrest.CoreMatchers"/>
+</qualifiedTypeNameHistroy>

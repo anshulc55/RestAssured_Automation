@@ -1,0 +1,20 @@
+package basic.rest.getcall;
+
+import io.restassured.RestAssured;
+import io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.*;
+
+public class getmethodautomation {
+	
+	//BaseURI
+	public static String baseUri = "https://api.trello.com";
+	
+	
+	public static void main(String agrs[]) {
+		RestAssured.baseURI = baseUri;
+		
+		given()
+	}
+	
+
+}
