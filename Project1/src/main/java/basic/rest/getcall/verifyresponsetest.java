@@ -18,7 +18,7 @@ public class verifyresponsetest {
 				.param("token", "922731ccc7fc77df3ce1a208830177e367f8c0769a1441e01a796370a45392c9").
 		when()
 				.get("/1/boards/XJaDDM5o").
-		then().assertThat().statusCode(200).and().
+		then().assertThat().statusCode(200).and().log().all().
 				contentType(ContentType.JSON).and().
 				body("name", equalTo("My First Borad")).and().
 				body("desc", equalTo("This is Testing Practice Board."));

@@ -22,14 +22,14 @@ public class createGitHubRepo {
 			   .header("Content-Type", "application/json")
 			   .header("Authorization", "Bearer " + bearerToken)
 			   .body("{\n"
-			   		+ "    \"name\": \"Api-testing-restcall\",\n"
+			   		+ "    \"name\": \"Api-testing-restcall-1\",\n"
 			   		+ "    \"description\": \"Repository created via Rest Assured Call\"\n"
 			   		+ "}").
 		when()
 				.post("/user/repos").
 		then().assertThat().statusCode(201).and().
 				contentType(ContentType.JSON).and().
-				body("name", equalTo("Api-testing-restcall")).and().
+				body("name", equalTo("Api-testing-restcall-1")).and().
 				body("description", equalTo("Repository created via Rest Assured Call"));
 		
 		System.out.println("Completed Create Repo Test Case");

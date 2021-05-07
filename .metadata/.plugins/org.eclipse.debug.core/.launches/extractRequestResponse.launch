@@ -6,7 +6,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
     <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
-        <listEntry value="basic.rest.postcall.extractRequestResponse"/>
+        <listEntry value="JSONResponseValidation.extractRequestResponse"/>
     </listAttribute>
     <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
     <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
