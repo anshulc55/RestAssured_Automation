@@ -13,6 +13,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -24,10 +25,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="BDD.APIFramework"/>
 		</list>
 		<list key="groupId">
+			<item value="BDD"/>
 		</list>
 		<list key="artifactId">
+			<item value="APIFramework"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -43,12 +47,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="APIAutomation"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Project1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

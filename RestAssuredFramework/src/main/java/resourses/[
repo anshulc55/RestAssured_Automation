@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Anshul",
+    "lastName": "Chauhan",
+    "gender": "Male",
+    "age": 29,
+    "salary": 10000.56,
+    "married": false
+  },
+  {
+    "firstName": "Mark",
+    "lastName": "Wood",
+    "gender": "Male",
+    "age": 30,
+    "salary": 20000.56,
+    "married": true
+  },
+  {
+    "firstName": "Kitty",
+    "lastName": "Martin",
+    "gender": "Female",
+    "age": 26,
+    "salary": 30000.56,
+    "married": false
+  }
+]
