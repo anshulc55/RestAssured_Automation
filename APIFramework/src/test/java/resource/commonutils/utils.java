@@ -10,7 +10,7 @@ public class utils {
 	RequestSpecification reqSpecification;
 	Response response;
 
-	String bearer_token = "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";
+	String bearer_token = "TOKEN_HERE";
 	String base_URI = "https://api.github.com";
 
 	public Response postRequest(String resourcePath, String payload) {
