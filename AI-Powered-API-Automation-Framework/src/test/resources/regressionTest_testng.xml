@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API Automation Suite - Smoke Test APIs">
+	<test name="Smoke Tests">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.GetPostsDataProviderTest" />
+		</classes>
+	</test>
+
+</suite>

@@ -21,13 +21,13 @@ public class utils {
 		reqSpecification.contentType(ContentType.JSON);
 		reqSpecification.header("Authorization", "Bearer " + bearer_token);
 		response = reqSpecification.post(base_URI + resourcePath);
-		RestLogger.info("Respose of Requst is - " + response.getBody().asString() );
+		RestLogger.info("Respose of Requst is - " + response.getBody().asString());
 		return response;
 	}
 
 	public Response deleteRequest(String resourcePath, String repo_name) {
 		String requestURI = base_URI + resourcePath + repo_name;
-		RestLogger.info("Dlete URI is - " + requestURI );		
+		RestLogger.info("Dlete URI is - " + requestURI);
 		reqSpecification = RestAssured.given();
 		reqSpecification.contentType(ContentType.JSON);
 		reqSpecification.header("Content-Type", "application/json");

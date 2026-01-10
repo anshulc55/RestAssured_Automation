@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API Automation Suite - JSON Place Holder APIs" parallel="classes"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="listeners.AllureTestListener" />
+	</listeners>
+	
+	<test name="JSONPlaceholder API Tests">
+		<packages>
+			<package name="tests" />
+		</packages>
+	</test>
+
+</suite>

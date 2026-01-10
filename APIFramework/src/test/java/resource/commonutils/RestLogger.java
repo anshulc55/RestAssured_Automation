@@ -4,7 +4,6 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-
 public class RestLogger {
 	// Initialize Log4j logs
 	private static final Logger Log = LogManager.getLogger(RestLogger.class);
@@ -12,7 +11,7 @@ public class RestLogger {
 	public static void initLogger() {
 		PropertyConfigurator.configure("log4j.properties");
 	}
-	
+
 	// This is to print log for the beginning of the test case
 	public static void startTestCase(String sTestCaseName) {
 

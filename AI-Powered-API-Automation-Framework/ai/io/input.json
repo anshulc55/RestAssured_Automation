@@ -1,0 +1,8 @@
+{
+  "endpoint" : "/posts",
+  "responseBody" : "[]",
+  "logsPath" : "logs/api-automation.log",
+  "httpStatus" : 200,
+  "correlationId" : "7b65c9c4-cd74-4678-a97f-87d05343e0e9",
+  "testName" : "demo_AI_Bridge"
+}
