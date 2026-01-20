@@ -1,149 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="3" failed="8" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2026-01-19T18:39:21 IST" name="Default suite" finished-at="2026-01-19T18:39:32 IST" duration-ms="10722">
-    <groups>
-    </groups>
-    <test started-at="2026-01-19T18:39:21 IST" name="Default test" finished-at="2026-01-19T18:39:32 IST" duration-ms="10722">
-      <class name="tests.PostsPostTest">
-        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:21 IST" name="beforeAllTests" finished-at="2026-01-19T18:39:21 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeAllTests -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:21 IST" name="setUp" finished-at="2026-01-19T18:39:21 IST" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_corner_emptyStringsForTitleAndBody()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:21 IST" name="testCreatePost_corner_emptyStringsForTitleAndBody" finished-at="2026-01-19T18:39:23 IST" duration-ms="1462" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
-at tests.PostsPostTest.testCreatePost_corner_emptyStringsForTitleAndBody(PostsPostTest.java:92)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_corner_emptyStringsForTitleAndBody -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:23 IST" name="tearDown" finished-at="2026-01-19T18:39:23 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:23 IST" name="setUp" finished-at="2026-01-19T18:39:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_corner_extraUnknownField()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:23 IST" name="testCreatePost_corner_extraUnknownField" finished-at="2026-01-19T18:39:24 IST" duration-ms="1110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_corner_extraUnknownField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:24 IST" name="tearDown" finished-at="2026-01-19T18:39:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:24 IST" name="setUp" finished-at="2026-01-19T18:39:24 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_corner_userIdNegative()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:24 IST" name="testCreatePost_corner_userIdNegative" finished-at="2026-01-19T18:39:25 IST" duration-ms="844" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
-at tests.PostsPostTest.testCreatePost_corner_userIdNegative(PostsPostTest.java:112)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_corner_userIdNegative -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:25 IST" name="tearDown" finished-at="2026-01-19T18:39:25 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:25 IST" name="setUp" finished-at="2026-01-19T18:39:25 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_corner_userIdZero()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:25 IST" name="testCreatePost_corner_userIdZero" finished-at="2026-01-19T18:39:26 IST" duration-ms="716" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
+<!-- Generated by org.testng.reporters.JUnitReportReporter -->
+<testsuite hostname="Anshuls-MacBook-M3.local" failures="8" tests="11" name="tests.PostsPostTest" time="10.603" errors="0" timestamp="2026-01-19T18:39:32 IST" skipped="0">
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_corner_userIdZero" time="0.716">
+    <failure message="Status code validation failed expected [400] but found [201]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -179,38 +39,11 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_corner_userIdZero -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:26 IST" name="tearDown" finished-at="2026-01-19T18:39:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:26 IST" name="setUp" finished-at="2026-01-19T18:39:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_corner_veryLongTitle()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:26 IST" name="testCreatePost_corner_veryLongTitle" finished-at="2026-01-19T18:39:26 IST" duration-ms="816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_corner_veryLongTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:26 IST" name="tearDown" finished-at="2026-01-19T18:39:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:26 IST" name="setUp" finished-at="2026-01-19T18:39:26 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_negative_invalidUserIdType()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:26 IST" name="testCreatePost_negative_invalidUserIdType" finished-at="2026-01-19T18:39:27 IST" duration-ms="802" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
+    </failure>
+  </testcase> <!-- testCreatePost_corner_userIdZero -->
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_negative_invalidUserIdType" time="0.803">
+    <failure message="Status code validation failed expected [400] but found [201]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -246,26 +79,11 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_negative_invalidUserIdType -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:27 IST" name="tearDown" finished-at="2026-01-19T18:39:27 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:27 IST" name="setUp" finished-at="2026-01-19T18:39:27 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_negative_malformedJsonPayload()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:27 IST" name="testCreatePost_negative_malformedJsonPayload" finished-at="2026-01-19T18:39:28 IST" duration-ms="1301" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [500]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [500]
+    </failure>
+  </testcase> <!-- testCreatePost_negative_invalidUserIdType -->
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_corner_emptyStringsForTitleAndBody" time="1.463">
+    <failure message="Status code validation failed expected [400] but found [201]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -273,7 +91,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1431)
 at org.testng.Assert.assertEquals(Assert.java:1395)
 at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
-at tests.PostsPostTest.testCreatePost_negative_malformedJsonPayload(PostsPostTest.java:82)
+at tests.PostsPostTest.testCreatePost_corner_emptyStringsForTitleAndBody(PostsPostTest.java:92)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -301,136 +119,11 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_negative_malformedJsonPayload -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:28 IST" name="tearDown" finished-at="2026-01-19T18:39:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="testCreatePost_negative_missingBody()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:28 IST" name="testCreatePost_negative_missingBody" finished-at="2026-01-19T18:39:29 IST" duration-ms="618" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
-at tests.PostsPostTest.testCreatePost_negative_missingBody(PostsPostTest.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_negative_missingBody -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:28 IST" name="setUp" finished-at="2026-01-19T18:39:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:29 IST" name="tearDown" finished-at="2026-01-19T18:39:29 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:29 IST" name="setUp" finished-at="2026-01-19T18:39:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_negative_missingTitle()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:29 IST" name="testCreatePost_negative_missingTitle" finished-at="2026-01-19T18:39:30 IST" duration-ms="1185" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
-at tests.PostsPostTest.testCreatePost_negative_missingTitle(PostsPostTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_negative_missingTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:30 IST" name="tearDown" finished-at="2026-01-19T18:39:30 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:30 IST" name="setUp" finished-at="2026-01-19T18:39:30 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_negative_missingUserId()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:30 IST" name="testCreatePost_negative_missingUserId" finished-at="2026-01-19T18:39:31 IST" duration-ms="798" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Status code validation failed expected [400] but found [201]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
+    </failure>
+  </testcase> <!-- testCreatePost_corner_emptyStringsForTitleAndBody -->
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_negative_missingUserId" time="0.799">
+    <failure message="Status code validation failed expected [400] but found [201]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -466,32 +159,169 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_negative_missingUserId -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:31 IST" name="tearDown" finished-at="2026-01-19T18:39:31 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:31 IST" name="setUp" finished-at="2026-01-19T18:39:31 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreatePost_positive()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:31 IST" name="testCreatePost_positive" finished-at="2026-01-19T18:39:32 IST" duration-ms="916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatePost_positive -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:32 IST" name="tearDown" finished-at="2026-01-19T18:39:32 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.PostsPostTest@1a75e76a]" started-at="2026-01-19T18:39:32 IST" name="afterAllTests" finished-at="2026-01-19T18:39:32 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterAllTests -->
-      </class> <!-- tests.PostsPostTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
+    </failure>
+  </testcase> <!-- testCreatePost_negative_missingUserId -->
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_corner_extraUnknownField" time="1.112"/>
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_corner_userIdNegative" time="0.846">
+    <failure message="Status code validation failed expected [400] but found [201]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
+at tests.PostsPostTest.testCreatePost_corner_userIdNegative(PostsPostTest.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+    </failure>
+  </testcase> <!-- testCreatePost_corner_userIdNegative -->
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_positive" time="0.916"/>
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_corner_veryLongTitle" time="0.817"/>
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_negative_missingBody" time="0.644">
+    <failure message="Status code validation failed expected [400] but found [201]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
+at tests.PostsPostTest.testCreatePost_negative_missingBody(PostsPostTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+    </failure>
+  </testcase> <!-- testCreatePost_negative_missingBody -->
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_negative_malformedJsonPayload" time="1.302">
+    <failure message="Status code validation failed expected [400] but found [500]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [500]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
+at tests.PostsPostTest.testCreatePost_negative_malformedJsonPayload(PostsPostTest.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+    </failure>
+  </testcase> <!-- testCreatePost_negative_malformedJsonPayload -->
+  <testcase classname="tests.PostsPostTest" name="testCreatePost_negative_missingTitle" time="1.185">
+    <failure message="Status code validation failed expected [400] but found [201]" type="java.lang.AssertionError">
+      <![CDATA[java.lang.AssertionError: Status code validation failed expected [400] but found [201]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at utils.ResponseValidator.validateStatusCode(ResponseValidator.java:22)
+at tests.PostsPostTest.testCreatePost_negative_missingTitle(PostsPostTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+    </failure>
+  </testcase> <!-- testCreatePost_negative_missingTitle -->
+</testsuite> <!-- tests.PostsPostTest -->

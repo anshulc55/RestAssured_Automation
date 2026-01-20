@@ -1,9 +1,12 @@
 import json
+import subprocess
 from services.ai_test_generator import generate_test
 
 
 INPUT_PATH = "ai/io/input.json"
 OUTPUT_PATH = "ai/io/output.json"
+
+subprocess.run(["python", "ai/tools/generate_framework_contract.py"])
 
 def main():
 	with open(INPUT_PATH, "r") as f:

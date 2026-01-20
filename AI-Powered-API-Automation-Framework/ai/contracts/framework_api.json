@@ -1,0 +1,47 @@
+{
+  "ApiClient": {
+    "get": {
+      "signature": "Response get(String endpoint, Map<String, Object> queryParams)",
+      "description": "Executes HTTP GET request"
+    },
+    "post": {
+      "signature": "Response post(String endpoint, String payload, Map<String, String> headers)",
+      "description": "Executes HTTP POST request"
+    },
+    "put": {
+      "signature": "Response put(String endpoint, int id, String payload)",
+      "description": "Executes HTTP PUT request"
+    },
+    "delete": {
+      "signature": "Response delete(String endpoint, int id)",
+      "description": "Executes HTTP DELETE request"
+    }
+  },
+
+  "ResponseValidator": {
+    "validateStatusCode": {
+      "signature": "void validateStatusCode(Response response, int expectedStatusCode)",
+      "description": "Validates HTTP status code"
+    },
+    "validateBodyFields": {
+      "signature": "void validateBodyFields(Response response, Map<String, Object> expectedFields)",
+      "description": "Validates response body fields using JSONPath"
+    }
+  },
+
+  "BaseTest": {
+    "description": "Provides correlationId lifecycle using @BeforeMethod and @AfterMethod"
+  },
+
+  "Restrictions": {
+    "forbidden": [
+      "RestAssured",
+      "given()",
+      "when()",
+      "then()",
+      "assertThat",
+      "ResponseSpecification",
+      "RequestSpecification"
+    ]
+  }
+}

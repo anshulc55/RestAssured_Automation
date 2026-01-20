@@ -3,6 +3,6 @@
   "responseBody" : "[]",
   "logsPath" : "logs/api-automation.log",
   "httpStatus" : 200,
-  "correlationId" : "7b65c9c4-cd74-4678-a97f-87d05343e0e9",
+  "correlationId" : "0b354145-b826-4391-b04f-0f941a00865d",
   "testName" : "demo_AI_Bridge"
 }

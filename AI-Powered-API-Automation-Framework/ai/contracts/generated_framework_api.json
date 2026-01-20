@@ -1,0 +1,42 @@
+{
+  "ApiClient": {
+    "get": {
+      "signature": "Response get(String endpoint, Map<String, Object> queryParams)"
+    },
+    "post": {
+      "signature": "Response post(String endpoint, String payload, Map<String, String> headers)"
+    },
+    "put": {
+      "signature": "Response put(String endpoint, int id, String payload)"
+    },
+    "delete": {
+      "signature": "Response delete(String endpoint, int id)"
+    }
+  },
+  "ResponseValidator": {
+    "validateStatusCode": {
+      "signature": "void validateStatusCode(Response response, int expectedStatusCode)"
+    },
+    "validateHeaders": {
+      "signature": "void validateHeaders(Response response, Map<String, String> expectedHeaders)"
+    },
+    "validateBodyFields": {
+      "signature": "void validateBodyFields(Response response, Map<String, Object> expectedBodyFields)"
+    },
+    "validateJsonSchema": {
+      "signature": "void validateJsonSchema(Response response, String schemaFilePath)"
+    }
+  },
+  "BaseTest": {},
+  "Restrictions": {
+    "forbidden": [
+      "RestAssured",
+      "given(",
+      "when(",
+      "then(",
+      "assertThat",
+      "ResponseSpecification",
+      "RequestSpecification"
+    ]
+  }
+}

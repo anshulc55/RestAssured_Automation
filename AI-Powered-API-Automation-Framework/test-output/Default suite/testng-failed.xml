@@ -3,15 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.DemoAITest">
+      <class name="tests.PostsPostTest">
         <methods>
+          <include name="testCreatePost_corner_userIdZero"/>
+          <include name="testCreatePost_corner_emptyStringsForTitleAndBody"/>
+          <include name="testCreatePost_negative_missingTitle"/>
+          <include name="testCreatePost_corner_userIdNegative"/>
           <include name="afterAllTests"/>
-          <include name="demo_AI_Bridge"/>
+          <include name="testCreatePost_negative_missingUserId"/>
+          <include name="testCreatePost_negative_malformedJsonPayload"/>
+          <include name="testCreatePost_negative_missingBody"/>
+          <include name="testCreatePost_negative_invalidUserIdType"/>
           <include name="tearDown"/>
-          <include name="beforeAllTests"/>
           <include name="setUp"/>
+          <include name="beforeAllTests"/>
         </methods>
-      </class> <!-- tests.DemoAITest -->
+      </class> <!-- tests.PostsPostTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
